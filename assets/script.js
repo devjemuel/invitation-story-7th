@@ -43,7 +43,6 @@ var melodyImg = document.getElementById('pageMelody');
 
 var typingLines = [
   'You are invited...',
-  '',
   'Join us as we turn the page to Story\'s new chapter'
 ];
 
