@@ -608,9 +608,8 @@ ul {
 /* Melody-2 inside ribbon frame background */
 .hero-melody-wrap {
   position: relative;
-  width: clamp(280px, 72vw, 420px);
-  height: clamp(340px, 88vw, 520px);
-  margin: 0 auto 20px;
+  width: clamp(200px, 55vw, 300px);
+  margin: 0 auto 16px;
   animation: gentleBob 3s ease-in-out infinite;
 }
 
@@ -625,13 +624,10 @@ ul {
 }
 
 .hero-melody-img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -42%);
-  width: 75%;
+  display: block;
+  width: 100%;
   height: auto;
-  z-index: 1;
+  filter: drop-shadow(0 4px 18px rgba(219, 112, 147, 0.45));
 }
 
 .hero-invite {
