@@ -581,7 +581,7 @@ ul {
   justify-content: center;
   text-align: center;
   background: linear-gradient(170deg, rgba(252,232,236,0.88) 0%, rgba(249,213,222,0.85) 50%, rgba(255,251,247,0.88) 100%);
-  padding: 80px 20px 60px;
+  padding: 20px 20px 40px;
   overflow: hidden;
 }
 
