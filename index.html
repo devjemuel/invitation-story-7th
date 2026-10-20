@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Storya Olivia's 7th Birthday Invitation</title>
+  <meta name="description" content="You're invited to Storya Olivia's 7th Birthday Party on October 31, 2026 at 4:00 PM — Subic Bay Peninsular Hotel">
+  <meta property="og:title" content="Storya Olivia's 7th Birthday">
+  <meta property="og:description" content="Join us on October 31, 2026 at 4:00 PM at Subic Bay Peninsular Hotel">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lora:ital,wght@0,400;0,600;1,400&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+  <!-- ========== DISPLAY 1: Closed Book ========== -->
+  <div class="display display--1 active" id="display1">
+    <div class="sparkles" aria-hidden="true">
+      <span class="sparkle sparkle--1"></span>
+      <span class="sparkle sparkle--2"></span>
+      <span class="sparkle sparkle--3"></span>
+      <span class="sparkle sparkle--4"></span>
+      <span class="sparkle sparkle--5"></span>
+      <span class="sparkle sparkle--6"></span>
+    </div>
+    <div class="floating-flowers" aria-hidden="true">
+      <span class="flower flower--1">&#127804;</span>
+      <span class="flower flower--2">&#127800;</span>
+      <span class="flower flower--3">&#127801;</span>
+      <span class="flower flower--4">&#127804;</span>
+      <span class="flower flower--5">&#127800;</span>
+    </div>
+    <div class="closed-book" id="closedBook">
+      <img src="assets/images/close-book-1.png" alt="Storybook" class="closed-book-img" draggable="false">
+      <div class="closed-book-overlay">
+        <img src="assets/images/s-logo.png" alt="S" class="book-s-logo" draggable="false">
+      </div>
+      <p class="book-tap-hint">Tap to open</p>
+    </div>
+  </div>
+
+  <!-- ========== DISPLAY 2: Open Book + Envelope ========== -->
+  <div class="display display--2" id="display2">
+    <div class="floating-flowers" aria-hidden="true">
+      <span class="flower flower--1">&#127804;</span>
+      <span class="flower flower--2">&#127800;</span>
+      <span class="flower flower--3">&#127801;</span>
+      <span class="flower flower--4">&#127804;</span>
+    </div>
+    <div class="open-book-wrapper" id="openBook">
+      <img src="assets/images/open-book-1.png" alt="Open storybook" class="open-book-img" draggable="false">
+
+      <!-- Left Page Content: Typing + Melody -->
+      <div class="page-content page-content--left">
+        <p class="typing-text" id="typingText"></p>
+        <img src="assets/images/melody-1.png" alt="My Melody" class="page-melody" id="pageMelody">
+      </div>
+
+      <!-- Right Page Content: Chapter 7 + Envelope -->
+      <div class="page-content page-content--right">
+        <h2 class="chapter-title" id="chapterTitle">
+          <span class="chapter-word">Chapter</span>
+          <span class="chapter-number">7</span>
+        </h2>
+        <div class="envelope-wrap" id="envelopeWrap">
+          <div class="envelope-clickable" id="envelopeBtn">
+            <img src="assets/images/envelope-1.png" alt="Envelope" class="envelope-img">
+            <div class="envelope-seal">
+              <img src="assets/images/emblem-1.png" alt="" class="envelope-emblem">
+              <img src="assets/images/s-logo.png" alt="" class="envelope-s-logo">
+            </div>
+          </div>
+          <div class="envelope-pointer" aria-hidden="true">
+            <img src="assets/images/cursor-melody-1.png" alt="" class="cursor-melody">
+            <span class="click-here-text">Click Here</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== DISPLAY 3: Main Invitation ========== -->
+  <div class="display display--3" id="display3">
+
+    <!-- Sticky Nav -->
+    <nav class="sticky-nav" id="stickyNav">
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#countdown">Countdown</a></li>
+        <li><a href="#details">Details</a></li>
+        <li><a href="#dresscode">Dress Code</a></li>
+        <li><a href="#gifts">Gifts</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#rsvp">RSVP</a></li>
+      </ul>
+    </nav>
+
+    <!-- Sticky RSVP Button -->
+    <a href="https://devjemuel.github.io/rsvp-story-7th/" target="_blank" rel="noopener" class="sticky-rsvp" id="stickyRsvp">RSVP Now</a>
+
+    <!-- 1. Hero -->
+    <section class="hero" id="hero">
+      <div class="floating-flowers floating-flowers--hero" aria-hidden="true">
+        <span class="flower flower--1">&#127804;</span>
+        <span class="flower flower--2">&#127800;</span>
+        <span class="flower flower--3">&#127801;</span>
+        <span class="flower flower--4">&#127804;</span>
+        <span class="flower flower--5">&#127800;</span>
+        <span class="flower flower--6">&#127801;</span>
+      </div>
+      <div class="hero-content">
+        <div class="hero-melody-wrap">
+          <img src="assets/images/melody-background.png" alt="" class="hero-melody-bg" aria-hidden="true">
+          <img src="assets/images/melody-2.png" alt="My Melody" class="hero-melody-img">
+        </div>
+        <p class="hero-invite">You are invited to</p>
+        <h1 class="hero-name">Storya Olivia's</h1>
+        <div class="hero-badge">
+          <span class="hero-age">7<sup>th</sup></span>
+          <span class="hero-birthday">Birthday</span>
+        </div>
+        <div class="hero-divider" aria-hidden="true">
+          <span class="divider-line"></span>
+          <span class="divider-star">&#10022;</span>
+          <span class="divider-line"></span>
+        </div>
+        <div class="hero-details">
+          <p class="hero-date">Saturday, 31 October 2026</p>
+          <p class="hero-time">4:00 PM</p>
+          <p class="hero-venue">Subic Bay Peninsular Hotel</p>
+        </div>
+        <div class="scroll-cue" aria-hidden="true">
+          <p class="scroll-text">Scroll Down</p>
+          <span class="scroll-arrow"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Countdown -->
+    <section class="section section--cream" id="countdown">
+      <div class="container">
+        <h2 class="section-title ribbon-header">Counting Down</h2>
+        <div class="countdown" id="countdownTimer">
+          <div class="countdown-unit">
+            <span class="countdown-number" id="cdDays">00</span>
+            <span class="countdown-label">Days</span>
+          </div>
+          <div class="countdown-unit">
+            <span class="countdown-number" id="cdHours">00</span>
+            <span class="countdown-label">Hours</span>
+          </div>
+          <div class="countdown-unit">
+            <span class="countdown-number" id="cdMinutes">00</span>
+            <span class="countdown-label">Minutes</span>
+          </div>
+          <div class="countdown-unit">
+            <span class="countdown-number" id="cdSeconds">00</span>
+            <span class="countdown-label">Seconds</span>
+          </div>
+        </div>
+        <p class="countdown-past" id="countdownPast" hidden>The party has started!</p>
+        <button class="btn btn--outline" id="addCalendarBtn">Add to Calendar</button>
+      </div>
+    </section>
+
+    <!-- 3. Details & Map -->
+    <section class="section section--pink" id="details">
+      <div class="container">
+        <h2 class="section-title ribbon-header">Venue &amp; Directions</h2>
+        <div class="card gold-frame">
+          <h3>Subic Bay Peninsular Hotel</h3>
+          <p class="venue-address">Bldg. 662, Dewey Avenue, Subic Bay Freeport Zone, Olongapo, Zambales, Philippines</p>
+          <div class="map-embed">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3856.3028969631073!2d120.28410749881354!3d14.82124808105592!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3396711229b838b9%3A0xf4329ee8d2684fd1!2sSubic%20Bay%20Peninsular%20Hotel!5e0!3m2!1sen!2sph!4v1792469027391!5m2!1sen!2sph"
+              width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Map to Subic Bay Peninsular Hotel"></iframe>
+          </div>
+          <a href="https://maps.google.com/?q=Subic+Bay+Peninsular+Hotel" target="_blank" rel="noopener" class="btn btn--primary">Get Directions</a>
+          <p class="parking-note">Parking is available at the hotel grounds.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Dress Code -->
+    <section class="section section--cream" id="dresscode">
+      <div class="container">
+        <h2 class="section-title ribbon-header">Dress Code</h2>
+        <div class="dresscode-grid">
+          <div class="card gold-frame dresscode-card">
+            <div class="dresscode-icon" aria-hidden="true">&#128087;</div>
+            <h3>Ladies</h3>
+            <p>Floral, white, or pastel dress — or white/pastel smart casual</p>
+            <div class="swatches" aria-label="Suggested colours">
+              <span class="swatch" style="background:#FFFFFF" title="White"></span>
+              <span class="swatch" style="background:#FADADD" title="Pink"></span>
+              <span class="swatch" style="background:#E6E6FA" title="Lavender"></span>
+              <span class="swatch" style="background:#FFFDD0" title="Cream"></span>
+              <span class="swatch" style="background:#B5EAD7" title="Mint"></span>
+              <span class="swatch" style="background:#C9E4F2" title="Baby Blue"></span>
+            </div>
+          </div>
+          <div class="card gold-frame dresscode-card">
+            <div class="dresscode-icon" aria-hidden="true">&#128084;</div>
+            <h3>Gentlemen</h3>
+            <p>White or pastel smart casual</p>
+            <div class="swatches" aria-label="Suggested colours">
+              <span class="swatch" style="background:#FFFFFF" title="White"></span>
+              <span class="swatch" style="background:#C9E4F2" title="Baby Blue"></span>
+              <span class="swatch" style="background:#E6E6FA" title="Lavender"></span>
+              <span class="swatch" style="background:#FFFDD0" title="Cream"></span>
+              <span class="swatch" style="background:#B5EAD7" title="Mint"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Gift Note -->
+    <section class="section section--pink" id="gifts">
+      <div class="container">
+        <h2 class="section-title ribbon-header">A Note on Gifts</h2>
+        <div class="card gold-frame gift-card">
+          <p class="gift-headline">Your presence is our greatest gift!</p>
+          <p>But if you'd like to bring a little something, Story would love:</p>
+          <ul class="gift-list">
+            <li>Art materials</li>
+            <li>Plushies</li>
+            <li>Keychains &amp; accessories</li>
+            <li>Stickers &amp; craft sets</li>
+            <li>My Melody items</li>
+            <li>A monetary gift</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. FAQ -->
+    <section class="section section--cream" id="faq">
+      <div class="container">
+        <h2 class="section-title ribbon-header">Frequently Asked Questions</h2>
+        <div class="faq-list">
+          <details class="faq-item card gold-frame">
+            <summary>What time should I arrive?</summary>
+            <p>Please arrive by <strong>4:00 PM</strong>. We've prepared activities for you to enjoy before the actual start of the program.</p>
+          </details>
+          <details class="faq-item card gold-frame">
+            <summary>Can I bring a plus-one?</summary>
+            <p>Due to the venue’s limited capacity, we can only accommodate the assigned number of seats for each guest. We are hoping for your cooperation and understanding. Thank you!</p>
+          </details>
+          <details class="faq-item card gold-frame">
+            <summary>Will there be kids' activities?</summary>
+            <p>Yes! We have fun activities planned for the little ones, including arts and crafts, games, and more.</p>
+          </details>
+          <details class="faq-item card gold-frame">
+            <summary>What about food allergies?</summary>
+            <p>Please let us know of any food allergies when you RSVP so we can make sure everyone is taken care of.</p>
+          </details>
+          <details class="faq-item card gold-frame">
+            <summary>Can I take photos during the party?</summary>
+            <p>Absolutely! Feel free to capture the happy moments. We may share a photo album link after the event.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. RSVP & Closing -->
+    <section class="section section--pink" id="rsvp">
+      <div class="container rsvp-section">
+        <h2 class="section-title ribbon-header">RSVP</h2>
+        <!-- <p>Kindly confirm your attendance by <strong>28 October 2026</strong>.</p> -->
+        <a href="https://devjemuel.github.io/rsvp-story-7th/" target="_blank" rel="noopener" class="btn btn--primary btn--large">RSVP Now</a>
+
+        <div class="closing">
+          <p class="see-you">See you there!</p>
+          <div class="heart" aria-hidden="true">&#10084;</div>
+          <div class="closing-melody-wrap">
+            <img src="assets/images/melody-background.png" alt="" class="closing-melody-bg" aria-hidden="true">
+            <img src="assets/images/melody-2.png" alt="My Melody" class="closing-melody-img">
+          </div>
+        </div>
+
+        <div class="contact">
+          <p>Questions? Contact us:</p>
+          <p><a href="tel:+639XXXXXXXXX" class="contact-link">Tap to Call</a></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+     <footer class="footer">
+      <p>Made with <span class="hearts">&hearts;</span> for Story by <a href="https://www.scope88.com" target="new">Scope88</a></p></footer>
+  </div>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>
